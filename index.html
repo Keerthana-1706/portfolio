@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keerthana Krishnan | Software Developer | Full Stack</title>
+    <meta name="description"
+        content="Portfolio of Keerthana Krishnan, Final-year Computer Science student and Full Stack Developer.">
+    <!-- Google Fonts for modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css?v=27">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Navigation Sidebar / Topbar -->
+        <header class="navbar" id="navbar">
+            <div class="nav-content">
+                <a href="#hero" class="brand-logo">KK.</a>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">
+                    <span class="hamburger"></span>
+                </button>
+
+                <nav class="nav-links" id="nav-links">
+                    <ul>
+                        <li><a href="#about" class="nav-item">About</a></li>
+                        <li><a href="#experience" class="nav-item">Experience</a></li>
+                        <li><a href="#projects" class="nav-item">Projects</a></li>
+                        <li><a href="#skills" class="nav-item">Skills</a></li>
+                        <li><a href="#contact" class="nav-item">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+
+            <!-- Hero Section -->
+            <section id="hero" class="section hero-section reveal">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <p class="greeting">Hi, my name is</p>
+                        <h1 class="name">Keerthana Krishnan.</h1>
+                        <h2 class="subheading">Software Developer | Full Stack</h2>
+                        <p class="tagline">
+                            Building scalable systems and clean user experiences that solve real-world problems.
+                        </p>
+                        <div class="hero-social-links">
+                            <a href="https://github.com/Keerthana-1706" target="_blank" aria-label="GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-github">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/keerthana-krishnan-a01815259/" target="_blank"
+                                aria-label="LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-linkedin">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <a href="https://leetcode.com/u/Keerthana_krishnan17/" target="_blank"
+                                aria-label="LeetCode">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-code">
+                                    <polyline points="16 18 22 12 16 6"></polyline>
+                                    <polyline points="8 6 2 12 8 18"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="hero-actions">
+                            <a href="Keerthana_Resume.pdf" class="btn btn-primary" target="_blank"
+                                rel="noopener noreferrer">
+                                Download Resume
+                            </a>
+                            <a href="#projects" class="btn btn-outline">
+                                View Projects
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="section about-section reveal">
+                <h2 class="section-title"><span class="section-number">01.</span> About Me</h2>
+                <div class="about-content">
+                    <div class="about-image-container">
+                        <img src="profile.jpeg" alt="Keerthana Krishnan Profile" class="profile-image">
+                    </div>
+                    <div class="about-text">
+                        <p>I am a Computer Science student with hands-on experience gained through internships and
+                            real-world projects. I have worked on product features, workflow automation, and system
+                            integration across both frontend and backend environments.</p>
+                        <p>My focus is on writing clean, maintainable code and building applications that are reliable,
+                            efficient, and user-focused. I enjoy learning new technologies, improving system
+                            performance, and turning complex problems into practical solutions.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="section experience-section reveal">
+                <h2 class="section-title"><span class="section-number">02.</span> Experience</h2>
+                <div class="experience-container">
+
+                    <!-- Job 1 -->
+                    <div class="job-card">
+                        <h3 class="job-title">Software Intern <span class="company">@ Oryx Health AI</span></h3>
+                        <p class="job-duration">Jan 2026 – Feb 2026</p>
+                        <ul class="job-details">
+                            <li>Built a React-based scheduling interface for multi-user workflow coordination.</li>
+                            <li>Implemented dynamic host and participant assignment logic based on workflow conditions.
+                            </li>
+                            <li>Containerized the application using Docker for consistent local execution.</li>
+                            <li>Evaluated system integration feasibility and documented workflow architecture.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Job 2 -->
+                    <div class="job-card">
+                        <h3 class="job-title">Full Stack Intern <span class="company">@ Luxury In Taste</span></h3>
+                        <p class="job-duration">Jun 2025 – Aug 2025</p>
+                        <ul class="job-details">
+                            <li>Developed full-stack features for the company website.</li>
+                            <li>Implemented Google and Facebook authentication using OAuth 2.0.</li>
+                            <li>Built a content management module for newsletters and category-based publishing.</li>
+                            <li>Contributed to frontend–backend integration and feature delivery in an Agile
+                                environment.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="section projects-section reveal">
+                <h2 class="section-title"><span class="section-number">03.</span> Some Things I've Built</h2>
+                <div class="projects-grid">
+
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="folder-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-folder">
+                                    <path
+                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Keerthana-1706/aptipro" target="_blank"
+                                    aria-label="GitHub Link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-github">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Aptipro</h3>
+                        <div class="project-description">
+                            <p>Full-stack aptitude testing platform with secure authentication and controlled test
+                                environment.</p>
+                            <ul>
+                                <li>Designed to prevent tab switching and ensure exam integrity.</li>
+                                <li>Supports timed tests with auto-submission and session tracking.</li>
+                                <li>Provides real-time performance insights for users.</li>
+                            </ul>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Node.js</li>
+                            <li>MySQL</li>
+                            <li>JWT</li>
+                        </ul>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="folder-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-folder">
+                                    <path
+                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Keerthana-1706/efficient-empty-return" target="_blank"
+                                    aria-label="GitHub Link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-github">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Efficient Empty Return</h3>
+                        <div class="project-description">
+                            <p>Logistics platform to match booking requests with available empty return trips.</p>
+                            <ul>
+                                <li>Improves fleet utilization by reducing empty travel.</li>
+                                <li>Automates route compatibility and availability validation.</li>
+                                <li>Simplifies booking and allocation workflow.</li>
+                            </ul>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="section skills-section reveal">
+                <h2 class="section-title"><span class="section-number">04.</span> Core Technologies</h2>
+
+                <div class="skills-grid-flattened">
+                    <!-- Row 1 -->
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+                            alt="Java">
+                        <span>Java</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                            alt="JavaScript">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                            alt="React">
+                        <span>React</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+                            alt="Next.js" class="invert-icon">
+                        <span>Next.js</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                            alt="HTML5">
+                        <span>HTML</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                            alt="CSS3">
+                        <span>CSS</span>
+                    </div>
+                    <!-- Row 2 (Centered) -->
+                    <div class="skill-item center-row-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+                            alt="Node.js">
+                        <span>Node.js</span>
+                    </div>
+                    <div class="skill-item center-row-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+                            alt="MySQL">
+                        <span>MySQL</span>
+                    </div>
+                    <div class="skill-item center-row-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg"
+                            alt="Microsoft SQL Server">
+                        <span>MSSQL</span>
+                    </div>
+                    <div class="skill-item center-row-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
+                            alt="Docker">
+                        <span>Docker</span>
+                    </div>
+                    <div class="skill-item center-row-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                            alt="AWS Logo" class="invert-icon flex-logo">
+                        <span>AWS</span>
+                    </div>
+                    <!-- Row 3 -->
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+                            alt="Git">
+                        <span>Git</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                            alt="GitHub" class="invert-icon">
+                        <span>GitHub</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
+                            alt="VS Code Logo">
+                        <span>VS Code</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg"
+                            alt="Vercel Logo" class="invert-icon">
+                        <span>Vercel</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg"
+                            alt="Netlify Logo">
+                        <span>Netlify</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section contact-section reveal">
+                <h2 class="section-title center"><span class="section-number">05.</span> What's Next?</h2>
+                <h2 class="contact-title">Get In Touch</h2>
+                <p class="contact-message">
+                    I am open to internship and full-time opportunities. Whether you have a question, a potential role,
+                    or just want to say hi, feel free to connect or reach out!
+                </p>
+                <div class="contact-actions">
+                    <a href="https://mail.google.com/mail/?view=cm&to=keerthanakrishnan9787@gmail.com&su=Portfolio%20Contact"
+                        target="_blank" rel="noopener noreferrer" class="btn btn-primary">Say Hello</a>
+                </div>
+
+                <div class="contact-socials">
+                    <a href="https://github.com/Keerthana-1706" target="_blank" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-github">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/keerthana-krishnan-a01815259/" target="_blank"
+                        aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-linkedin">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="https://leetcode.com/u/Keerthana_krishnan17/" target="_blank" aria-label="LeetCode">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-code">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <p>Designed & Built by Keerthana Krishnan</p>
+            </footer>
+
+        </main>
+    </div>
+
+    <!-- Custom Javascript -->
+    <script src="script.js?v=2"></script>
+</body>
+
+</html>
