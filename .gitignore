@@ -22,5 +22,5 @@ env/
 node_modules/
 
 # Ignore custom scripts and logs
-remove_bg.py
+
 git_log.txt

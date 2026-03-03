@@ -14,7 +14,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
         rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css?v=27">
+    <link rel="stylesheet" href="styles.css?v=29">
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -107,7 +107,7 @@
                 <h2 class="section-title"><span class="section-number">01.</span> About Me</h2>
                 <div class="about-content">
                     <div class="about-image-container">
-                        <img src="profile.jpeg" alt="Keerthana Krishnan Profile" class="profile-image">
+                        <img src="profile.png?v=12" alt="Keerthana Krishnan Profile" class="profile-image">
                     </div>
                     <div class="about-text">
                         <p>I am a Computer Science student with hands-on experience gained through internships and
@@ -349,8 +349,7 @@
                     or just want to say hi, feel free to connect or reach out!
                 </p>
                 <div class="contact-actions">
-                    <a href="https://mail.google.com/mail/?view=cm&to=keerthanakrishnan9787@gmail.com&su=Portfolio%20Contact"
-                        target="_blank" rel="noopener noreferrer" class="btn btn-primary">Say Hello</a>
+                    <button id="sayHelloBtn" class="btn btn-primary">Say Hello</button>
                 </div>
 
                 <div class="contact-socials">
@@ -384,6 +383,32 @@
                     </a>
                 </div>
             </section>
+
+            <!-- Contact Form Modal -->
+            <div id="contactModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <h2>Send a Message</h2>
+                    <form id="contactForm">
+
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="What's your name?">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="What's your email?">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required
+                                placeholder="Hello Keerthana, I would like to..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
+                        <div id="formStatus" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
 
             <footer class="footer">
                 <p>Designed & Built by Keerthana Krishnan</p>

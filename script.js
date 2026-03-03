@@ -114,4 +114,109 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', toggleSidebarOnScroll);
     toggleSidebarOnScroll(); // init on load
+
+    // --- Contact Modal Logic ---
+    const contactModal = document.getElementById('contactModal');
+    const sayHelloBtn = document.getElementById('sayHelloBtn');
+    const closeModalBtn = document.querySelector('.close-modal');
+    const contactForm = document.getElementById('contactForm');
+
+    // Open Modal
+    if (sayHelloBtn && contactModal) {
+        sayHelloBtn.addEventListener('click', () => {
+            contactModal.classList.add('show');
+        });
+    }
+
+    // Close Modal via 'X' Button
+    if (closeModalBtn) {
+        closeModalBtn.addEventListener('click', () => {
+            contactModal.classList.remove('show');
+        });
+    }
+
+    // Close Modal via clicking outside the content window
+    window.addEventListener('click', (e) => {
+        if (e.target === contactModal) {
+            contactModal.classList.remove('show');
+        }
+    });
+
+    // Form submission handle
+    if (contactForm) {
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const submitBtn = document.getElementById('submitBtn');
+            const formStatus = document.getElementById('formStatus');
+
+            // Set loading state
+            submitBtn.textContent = 'Sending...';
+            submitBtn.style.opacity = '0.7';
+            formStatus.className = 'form-status';
+            formStatus.style.display = 'none';
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            try {
+                const response = await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ name, email, message })
+                });
+
+                if (response.ok) {
+                    formStatus.textContent = 'Message sent successfully! I will get back to you soon.';
+                    formStatus.className = 'form-status status-success';
+                    contactForm.reset();
+                } else {
+                    formStatus.textContent = 'Something went wrong. Please try again.';
+                    formStatus.className = 'form-status status-error';
+                }
+            } catch (error) {
+                formStatus.textContent = 'Network error. Could not send message.';
+                formStatus.className = 'form-status status-error';
+            } finally {
+                // Restore button state
+                submitBtn.textContent = 'Send Message';
+                submitBtn.style.opacity = '1';
+                formStatus.style.display = 'block';
+            }
+        });
+    }
+});
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    try {
+        const response = await fetch("/api/contact", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ name, email, message }),
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+            alert("Message sent successfully! 🚀");
+            form.reset();
+        } else {
+            alert("Something went wrong. Please try again.");
+        }
+    } catch (error) {
+        console.error("Error:", error);
+        alert("Server error. Please try again later.");
+    }
 });
